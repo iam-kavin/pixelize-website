@@ -1,9 +1,14 @@
 import React from 'react'
 import Constant from '../../Utilits/Constant'
+import { Box } from '@mui/material'
 
 const HomePage = () => {
     return (
-        <div>{Constant.homepage}</div>
+        <div>
+            <Box>
+
+            </Box>
+        </div>
     )
 }
 
