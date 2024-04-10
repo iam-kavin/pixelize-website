@@ -89,7 +89,7 @@ export default function DesktopOnePage() {
               lineHeight="48px"
             >
               <Text size="3xl" as="span" color="black.900_02">
-                At Haptico, we&#39;re your one-stop shop for crafting exceptional digital products and propelling them
+                At Pixelize, we&#39;re your one-stop shop for crafting exceptional digital products and propelling them
                 to success. We&#39;re a passionate team of&nbsp;
               </Text>
               <Text size="3xl" as="span" color="black.900_02" fontWeight={500}>

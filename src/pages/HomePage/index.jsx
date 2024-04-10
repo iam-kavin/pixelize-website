@@ -101,7 +101,7 @@ export default function HomePagePage() {
             p={{ md: "", base: "20px" }}
           >
             <Text size="3xl" as="span" color="black.900_02">
-              At Haptico, we&#39;re your one-stop shop for crafting exceptional digital products and propelling them to
+              At Pixelize, we&#39;re your one-stop shop for crafting exceptional digital products and propelling them to
               success. We&#39;re a passionate team of&nbsp;
             </Text>
             <Text size="3xl" as="span" color="black.900_02" fontWeight={500}>
@@ -219,12 +219,12 @@ export default function HomePagePage() {
             mx="auto"
             p={{ md: "", base: "20px" }}
           >
-            <Flex gap="24px" flex={1} alignItems="start" flexDirection={{ md: "row", base: "column" }}>
-              <Image src="images/img_rectangle_8.png" h="355px" w={{ md: "76%", base: "100%" }} borderRadius="32px" />
+            <Flex gap="24px" flex={1} alignItems="start" flexDirection={{ md: "row", base: "column" }} cursor="pointer" onClick={()=>window.open("https://sign.centilio.com/")}>
+              <Image src="Centilio.png" h="355px" w={{ md: "76%", base: "100%" }} borderRadius="32px" />
               <Flex gap="23px" w={{ md: "24%", base: "100%" }} flexDirection="column">
                 <Flex justifyContent="space-between" alignItems="start" gap="20px">
                   <Text size="4xl" fontSize="40px" fontWeight={400}>
-                    HIP HIP
+                   Centilio
                   </Text>
                   <Image src="images/img_arrow_left.svg" h="8px" mt="7px" w="8px" />
                 </Flex>
@@ -233,7 +233,7 @@ export default function HomePagePage() {
                 </Text>
               </Flex>
             </Flex>
-            <Flex gap="45px" flex={1} alignItems="start" flexDirection={{ md: "row", base: "column" }}>
+            <Flex gap="45px" flex={1} alignItems="start" flexDirection={{ md: "row", base: "column" }} cursor="pointer" onClick={()=>window.open("https://zolahost.com/")}>
               <Flex
                 gap="24px"
                 flex={1}
@@ -241,24 +241,24 @@ export default function HomePagePage() {
                 flexDirection={{ md: "row", base: "column" }}
                 alignSelf="stretch"
               >
-                <Image src="images/img_rectangle_9.png" h="355px" w={{ md: "79%", base: "100%" }} borderRadius="32px" />
+                <Image src="ZolaHost.png" h="355px" w={{ md: "79%", base: "100%" }} borderRadius="32px" />
                 <Flex gap="23px" w={{ md: "21%", base: "100%" }} flexDirection="column" alignItems="start">
                   <Text size="4xl" fontSize="40px" fontWeight={400}>
-                    HIP HIP
+                    Zola Host
                   </Text>
                   <Text color="gray.600" lineHeight="28px">
                     A coffee brand’s complete branding and helped them to 3x their growth rate
                   </Text>
                 </Flex>
               </Flex>
-              <Image src="images/img_arrow_left.svg" h="8px" mt="8px" w={{ md: "8px", base: "100%" }} />
+              <Image src="MocDoc.png" h="8px" mt="8px" w={{ md: "8px", base: "100%" }} />
             </Flex>
-            <Flex gap="24px" flex={1} alignItems="start" flexDirection={{ md: "row", base: "column" }}>
-              <Image src="images/img_rectangle_10.png" h="355px" w={{ md: "76%", base: "100%" }} borderRadius="32px" />
+            <Flex gap="24px" flex={1} alignItems="start" flexDirection={{ md: "row", base: "column" }} cursor="pointer" onClick={()=>window.open("https://mocdoc.in/")}>
+              <Image src="MocDoc.png" h="355px" w={{ md: "76%", base: "100%" }} borderRadius="32px" />
               <Flex gap="23px" w={{ md: "24%", base: "100%" }} flexDirection="column">
                 <Flex justifyContent="space-between" alignItems="start" gap="20px">
                   <Text size="4xl" fontSize="40px" fontWeight={400}>
-                    HIP HIP
+                   Moc Doc
                   </Text>
                   <Image src="images/img_arrow_left.svg" h="8px" mt="7px" w="8px" />
                 </Flex>
@@ -404,11 +404,11 @@ export default function HomePagePage() {
               px="0px"
               mx="auto"
             >
-              <Flex alignItems="center" flexDirection={{ md: "row", base: "column" }}>
+              <Flex alignItems="center" flexDirection={{ md: "row", base: "column"  }}>
                 <Flex gap="6px" alignItems="start">
                   <Image src="images/img_mobile.svg" h="20px" mt="2px" />
                   <Heading as="h4" letterSpacing="-4.80px" fontSize="24px">
-                    Haptica
+                    Pixelize
                   </Heading>
                 </Flex>
                 <UnorderedList
@@ -417,6 +417,7 @@ export default function HomePagePage() {
                   ml={{ md: "275px", base: "0px" }}
                   gap="21px"
                   display="flex"
+                  justifyContent="space-around"
                   flexDirection="column"
                   alignItems="start"
                 >

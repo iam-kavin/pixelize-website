@@ -20,7 +20,7 @@ const ContactUs = () => {
   <Box style={{paddingTop:'42px',paddingBottom:'15px'}}>
   <Header
    display="flex"
-   justifyContent="space-between"
+   justifyContent="space-around"
    alignItems="center"
    gap="20px"
    flexDirection={{ md: "row", base: "column" }} />
