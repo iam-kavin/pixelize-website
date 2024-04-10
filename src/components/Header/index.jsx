@@ -8,8 +8,8 @@ export default function Header({ ...props }) {
   console.log(props,'props')
   return (
     <Box {...props} as="header">
-      <Flex gap="6px" alignItems="start">
-        <Image src="images/img_mobile.svg" h="20px" mt="2px" />
+      <Flex gap="6px" alignItems="center">
+        <Image src="plogo.png" h="20px" mt="2px" />
         <Heading as="h4" letterSpacing="-4.80px" fontSize="24px" onClick={()=>navigate('/homePage')}>
           Pixelize
         </Heading>
