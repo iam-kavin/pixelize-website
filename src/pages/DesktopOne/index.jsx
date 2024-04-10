@@ -42,7 +42,7 @@ export default function DesktopOnePage() {
               We bridge the gap between vision and reality
             </Text>
             <Box h={{ md: "1025px", base: "auto" }} mt="127px" alignSelf="stretch" position="relative">
-              <Text mt="125px" mr={{ md: "115px", base: "0px" }} fontFamily="Lexend Deca" w="24%" lineHeight="28px">
+              <Text mt="125px" ml={{ md: "70%", base: "0px" }} fontFamily="Lexend Deca" w="24%" lineHeight="28px">
                 Full-Stack Development & Marketing Solutions for Growth-Driven Businesses
               </Text>
               <AbsoluteCenter
@@ -297,14 +297,20 @@ export default function DesktopOnePage() {
                   Our streamlined approach helps you launch your product efficiently.
                 </Text>
               </Flex>
+              <Flex
+              gap={{ md: "150px", base: "64px", sm: "96px" }}
+              w={{ md: "21%", base: "100%" }}
+              flexDirection="column"
+              >
               <Text size="2xl" fontSize="24px">
                 Scalable Solutions
               </Text>
-              <Text color="gray.600" mb={{ md: "56px", base: "0px" }} w={{ md: "21%", base: "100%" }} lineHeight="28px">
+              <Text color="gray.600" mb={{ md: "56px", base: "0px" }} w={{ base: "100%" }} lineHeight="28px" >
                 We build products that can grow alongside your business.
               </Text>
+              </Flex> 
               <Flex
-                gap={{ md: "127px", base: "63px", sm: "95px" }}
+                gap={{ md: "140px", base: "63px", sm: "95px" }}
                 w={{ md: "21%", base: "100%" }}
                 flexDirection="column"
                 alignItems="start"
@@ -352,7 +358,7 @@ export default function DesktopOnePage() {
                 flex={1}
                 w="100%"
                 borderRadius="28px"
-                px={{ base: "20px", sm: "" }}
+                px={{ base: "20px", sm: "25%" }}
                 alignSelf="stretch"
               >
                 Get a Free Consultation
@@ -395,14 +401,16 @@ export default function DesktopOnePage() {
                 <Flex gap="6px" alignItems="start">
                   <Image src="images/img_mobile.svg" h="20px" mt="2px" />
                   <Heading as="h1" letterSpacing="-4.80px" fontSize="24px">
-                    Haptica
+                   Pixelize
                   </Heading>
                 </Flex>
-                <Flex mt="3px" w={{ base: "100%", sm: "51%" }} justifyContent="space-between" gap="20px">
-                  <Flex w="52%" justifyContent="space-between" flexWrap="wrap" gap="20px">
+                <Flex mt="3px" w={{ base: "100%", sm: "58%" }} justifyContent="space-between" gap="20px">
+                  <Flex w="55%" justifyContent="space-between" flexWrap="wrap" gap="20px" >
+                   
                     <Text size="xs" letterSpacing="2.00px">
                       WHAT WE DO
                     </Text>
+                  
                     <Text size="xs" letterSpacing="2.00px">
                       OUR WORK
                     </Text>
