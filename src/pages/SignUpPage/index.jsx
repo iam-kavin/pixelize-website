@@ -3,7 +3,7 @@ import { Helmet } from "react-helmet";
 import Header from "../../components/Header";
 import { Button, Input, Text, Progress, Flex, Image, Box, Container } from "@chakra-ui/react";
 
-export default function SignUpPagePage() {
+export default function SignUpPagePage({fetchLogin}) {
   return (
     <>
       <Helmet>
@@ -107,6 +107,7 @@ export default function SignUpPagePage() {
                   minW="126px"
                   borderRadius="28px"
                   px={{ base: "20px", sm: "" }}
+                  onClick={()=>fetchLogin(true)}
                 >
                   Next Step
                 </Button>

@@ -2,6 +2,7 @@ import React from "react";
 import { Helmet } from "react-helmet";
 import Header from "../../components/Header";
 import { Link, Text, UnorderedList, ListItem, Heading, Image, Flex, Container, Button, Box } from "@chakra-ui/react";
+import { colors } from "theme/foundations";
 
 export default function WorkPagePage() {
   return (
@@ -34,6 +35,7 @@ export default function WorkPagePage() {
             alignItems="center"
             gap="20px"
             flexDirection={{ md: "row", base: "column" }}
+            fontColor={{color:'#fff'}}
           />
           <Flex gap={{ md: "156px", base: "78px", sm: "117px" }} flexDirection="column" alignItems="center">
             <Flex
@@ -525,9 +527,16 @@ export default function WorkPagePage() {
             bg="amber.300"
             p={{ md: "42px", base: "20px" }}
           >
+             <Flex gap="6px" alignItems="center">
+                <Image src="images/img_mobile.svg" h="20px" mt="2px" />
+                <Heading as="h4" letterSpacing="-4.80px" fontSize="24px">
+                  Haptica
+                </Heading>
+              </Flex>
             <Container
               display="flex"
               alignItems="end"
+              justifyContent="space-around"
               maxW="870px"
               w="100%"
               px="0px"
@@ -535,12 +544,7 @@ export default function WorkPagePage() {
               my="127px"
               flexDirection={{ md: "row", base: "column" }}
             >
-              <Flex gap="6px" alignItems="start">
-                <Image src="images/img_mobile.svg" h="20px" mt="2px" />
-                <Heading as="h4" letterSpacing="-4.80px" fontSize="24px">
-                  Haptica
-                </Heading>
-              </Flex>
+             
               <UnorderedList
                 styleType="none"
                 mt="3px"

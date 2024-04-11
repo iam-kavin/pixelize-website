@@ -548,7 +548,7 @@ export default function ServicePagePage() {
                           position="relative"
                           lineHeight="48px"
                         >
-                          Haptica went above and beyond to make sure we got something we were happy with
+                      Pixelize went above and beyond to make sure we got something we were happy with
                         </Text>
                       </Flex>
                       <Text size="xl" mt="34px">
@@ -932,8 +932,15 @@ export default function ServicePagePage() {
                 bg="amber.300"
                 p={{ md: "42px", base: "20px" }}
               >
+                 <Flex gap="6px" alignItems="center">
+                    <Image src="images/img_mobile.svg" h="20px" mt="2px" />
+                    <Heading as="h4" letterSpacing="-4.80px" fontSize="24px">
+                      Pixelize
+                    </Heading>
+                  </Flex>
                 <Container
                   display="flex"
+                  justifyContent="space-around"
                   alignItems="end"
                   maxW="870px"
                   w="100%"
@@ -942,12 +949,7 @@ export default function ServicePagePage() {
                   my="127px"
                   flexDirection={{ md: "row", base: "column" }}
                 >
-                  <Flex gap="6px" alignItems="start">
-                    <Image src="images/img_mobile.svg" h="20px" mt="2px" />
-                    <Heading as="h4" letterSpacing="-4.80px" fontSize="24px">
-                      Haptica
-                    </Heading>
-                  </Flex>
+                 
                   <UnorderedList
                     styleType="none"
                     mt="3px"

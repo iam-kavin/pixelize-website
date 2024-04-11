@@ -17,7 +17,7 @@ const ContactUs = () => {
     }
  return (
   <>
-  <Box style={{paddingTop:'42px',paddingBottom:'15px'}}>
+  <Box style={{paddingTop:'42px',paddingBottom:'15px',}}>
   <Header
    display="flex"
    justifyContent="space-around"
@@ -47,23 +47,23 @@ const ContactUs = () => {
    </Box>
 
    <Box>
-    <Container>
-     <Grid container>
+    <Container fontFamily="Lexend Deca">
+     <Grid container  style={{display:'grid',gridTemplateColumns:'1fr 1fr',}}>
       <Grid item xs={12} lg={6} sm={12} md={6}>
-       <Text variant="h4" sx={{ margin: "4% 0 4%" }}>
+       <Text variant="h6" sx={{ margin: "4% 0 4%" }}>
         Get In Touch
        </Text>
-       <Text variant="h5" sx={{ margin: "3% 0 3%" }}>
+       <Text variant="h6" sx={{ margin: "3% 0 3%" }}>
         Reach Us
        </Text>
        <Text
         variant="body1"
-        sx={{ fontWeight: "300", margin: "2% 0 2%" }}
+        sx={{ fontWeight: "500", margin: "2% 0 2%" }}
        >
         {/* <LocationOnIcon sx={{ margin: "0% 1% 0%" }} /> */}
         210/3, Kovai Road, Kundadam Dharapuram,
        </Text>
-       <Text variant="body1" sx={{ fontWeight: "300", marginLeft: "4%" }}>
+       <Text variant="body1" sx={{ fontWeight: "500",  }}>
         Tirupur,Tamil Nadu–638702, Tamilnadu, India.
        </Text>
        <Text
@@ -112,16 +112,16 @@ const ContactUs = () => {
      <form ref={form} onSubmit={sendEmail}>
      <Grid container>
       <Grid item xs={12} lg={6} sm={12} md={6} sx={{ padding: "2%" }}>
-       <Input fullWidth id="Name" label="Name" type="text" name="name" variant="standard" />
+       <Input fullWidth id="Name" label="Name" type="text" name="name" variant="standard" placeholder="Name" />
       </Grid>
       <Grid item xs={12} lg={6} sm={12} md={6} sx={{ padding: "2%" }}>
-       <Input fullWidth id="Email" label="Email" type="email" name="email" variant="standard" />
+       <Input fullWidth id="Email" label="Email" type="email" name="email" variant="standard" placeholder="Email" />
       </Grid>
       <Grid item xs={12} lg={6} sm={12} md={6} sx={{ padding: "2%" }}>
-       <Input fullWidth id="Phone" label="Phone" type="number" name="phone" variant="standard" />
+       <Input fullWidth id="Phone" label="Phone" type="number" name="phone" variant="standard" placeholder="Phone" />
       </Grid>
       <Grid item xs={12} lg={6} sm={12} md={6} sx={{ padding: "2%" }}>
-       <Input fullWidth id="Subject" label="Subject" variant="standard" type="text" name="subject"/>
+       <Input fullWidth id="Subject" label="Subject" variant="standard" type="text" name="subject" placeholder="Subject"/>
       </Grid>
       <Grid item xs={12} lg={12} sm={12} md={12} sx={{ padding: "2%" }}>
        <Input
@@ -131,10 +131,14 @@ const ContactUs = () => {
         variant="standard"
         type="text"
         name="message"
+        placeholder="Description"
        />
       </Grid>
       <Grid item xs={12} lg={12} sm={12} md={12} sx={{ padding: "2%", textAlign: "center" }}>
-       <Button variant="contained" type="submit" value="Send" >
+       <Button  sx={{"&:hover":{
+        backgroundColor:'#0C2E7D'
+       }}}
+       backgroundColor="#0C2E7D" color="#fff" variant='solid' style={{borderRadius:'10px'}}>
         Send
        </Button>
       </Grid>

@@ -8,13 +8,14 @@ import NotFound from "pages/NotFound";
 import DesktopOne from "pages/DesktopOne";
 import HomePage from "pages/HomePage";
 import WorkPage from "pages/WorkPage";
-import SignUpPage from "pages/SignUpPage";
+// import SignUpPage from "pages/SignUpPage";
 import ServicePage from "pages/ServicePage";
 import ContactUs from 'pages/ContactUs';
+import SignUpPagePage from 'pages/SignUpPage';
 
 
 const AppRoute = () => {
-
+    // const [isFetched,setIsFetched]=useState(true);
     return (
         <div>   
             {/* <TopBar /> */}
@@ -31,10 +32,11 @@ const AppRoute = () => {
                     <Route path='/whatWeDo' element={<ServicePage />} />
                     <Route path='/error' element={<NotFound />}/>
                     <Route path='/contactUs' element={<ContactUs />}/>
+                    {/* <Route path="/signUp" element={<SignUpPagePage />}/> */}
                     <Route path="*" element={<Navigate to="/error" />} />
                 </> :
-                <Route />
-            </Routes>
+ {/* <Route path='/signUp' element={<SignUpPagePage  fetchLogin={(val)=>setIsFetched(val)}/>} />} */}
+ </Routes>
         </div>
     );
 };

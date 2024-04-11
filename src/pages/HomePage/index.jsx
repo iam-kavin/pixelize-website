@@ -372,7 +372,7 @@ export default function HomePagePage() {
             >
               Get a Free Consultation
             </Button>
-            <Text size="s" mt="15px" ml={{ base: "0px", sm: "24px" }}>
+            <Text size="s" mt="15px"  ml={{ base: "0px", sm: "24px" }}>
               Learn More About Our Services
             </Text>
             <Image
@@ -394,8 +394,14 @@ export default function HomePagePage() {
             alignItems="center"
             p={{ base: "20px", sm: "40px" }}
           >
+              <Flex gap="6px" alignItems="center">
+                  <Image src="images/img_mobile.svg" h="20px" mt="2px" />
+                  <Heading as="h4" letterSpacing="-4.80px" fontSize="24px">
+                    Pixelize
+                  </Heading>
+                </Flex>
             <Container
-              mt="35px"
+              mt="80px"
               mb="85px"
               display="flex"
               justifyContent="center"
@@ -404,13 +410,7 @@ export default function HomePagePage() {
               px="0px"
               mx="auto"
             >
-              <Flex alignItems="center" flexDirection={{ md: "row", base: "column"  }}>
-                <Flex gap="6px" alignItems="start">
-                  <Image src="images/img_mobile.svg" h="20px" mt="2px" />
-                  <Heading as="h4" letterSpacing="-4.80px" fontSize="24px">
-                    Pixelize
-                  </Heading>
-                </Flex>
+              <Flex alignItems="space-evenly" flexDirection={{ md: "row", base: "column"  }} gap="180px">
                 <UnorderedList
                   styleType="none"
                   mt="3px"
