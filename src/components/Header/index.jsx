@@ -10,7 +10,15 @@ export default function Header({ ...props }) {
     <Box {...props} as="header">
       <Flex gap="6px" alignItems="center">
         <Image src="plogo.png" h="20px" mt="2px" />
-        <Heading as="h4" letterSpacing="-4.80px" fontSize="24px" onClick={()=>navigate('/homePage')} style={{color:props?.fontColor?.color}}>
+        <Heading 
+        as="h4" 
+        letterSpacing="-4.80px"
+         fontSize="24px"
+          onClick={()=>navigate('/homePage')} 
+      //     style={{color:props?.fontColor?.color,
+      //        background: "linear-gradient(to right, #5BBAD2, #E1859F",
+      // backgroundClip: "text", color: 'transparent' }}
+      >
           Pixelize
         </Heading>
       </Flex>
