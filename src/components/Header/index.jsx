@@ -18,6 +18,7 @@ export default function Header({ ...props }) {
       //     style={{color:props?.fontColor?.color,
       //        background: "linear-gradient(to right, #5BBAD2, #E1859F",
       // backgroundClip: "text", color: 'transparent' }}
+      style={{color:props?.fontColor?.color}}
       >
           Pixelize
         </Heading>

@@ -2,8 +2,10 @@ import React from "react";
 import { Helmet } from "react-helmet";
 import Header from "../../components/Header";
 import { Link, Text, UnorderedList, ListItem, Heading, Image, Flex, Container, Button, Box } from "@chakra-ui/react";
+import { useMediaQuery } from '@chakra-ui/react'
 
 export default function HomePagePage() {
+  const [small]=useMediaQuery(['min-width:700px']);
 
 
   return (
@@ -219,8 +221,8 @@ export default function HomePagePage() {
             mx="auto"
             p={{ md: "", base: "20px" }}
           >
-            <Flex gap="24px" flex={1} alignItems="start" flexDirection={{ md: "row", base: "column" }} cursor="pointer" onClick={()=>window.open("https://sign.centilio.com/")}>
-              <Image src="Centilio.png" h="450px" w={{ md: "76%", base: "100%" }} borderRadius="32px"  sx={{" &:hover":{boxShadow:'0 0.1875rem 0.75rem #8c98a440'}}}/>  
+            <Flex gap="24px" flex={1} alignItems="start" flexDirection={{ md: "row", base: "column" }} cursor="pointer" onClick={()=>window.open("https://centilio.com/")}>
+              <Image src="Centilio.png" h="100%" w={{ md: "76%", base: "100%" }} borderRadius="32px"  sx={{" &:hover":{boxShadow:'0 0.1875rem 0.75rem #8c98a440'}}}/>  
               <Flex gap="23px" w={{ md: "24%", base: "100%" }} flexDirection="column">
                 <Flex justifyContent="space-between" alignItems="start" gap="20px">
                   <Text size="4xl" fontSize="40px" fontWeight={400}>
@@ -241,7 +243,7 @@ export default function HomePagePage() {
                 flexDirection={{ md: "row", base: "column" }}
                 alignSelf="stretch"
               >
-                <Image src="ZolaHost.png" h="450px" w={{ md: "79%", base: "100%" }} borderRadius="32px" objectFit='contain'  sx={{" &:hover":{boxShadow:'0 0.1875rem 0.75rem #8c98a440'}}}/>
+                <Image src="ZolaHost.png" h="100%" w={{ md: "79%", base: "100%" }} borderRadius="32px" objectFit='contain'  sx={{" &:hover":{boxShadow:'0 0.1875rem 0.75rem #8c98a440'}}}/>
                 <Flex gap="23px" w={{ md: "21%", base: "100%" }} flexDirection="column" alignItems="start">
                   <Text size="4xl" fontSize="40px" fontWeight={400}>
                     Zola Host
@@ -254,7 +256,7 @@ export default function HomePagePage() {
               <Image src="images/img_arrow_left.svg" h="8px" mt="8px" w={{ md: "8px", base: "100%" }} />
             </Flex>
             <Flex gap="24px" flex={1} alignItems="start" flexDirection={{ md: "row", base: "column" }} cursor="pointer" onClick={()=>window.open("https://mocdoc.in/")}>
-              <Image src="MocDoc.png" h="450px" w={{ md: "76%", base: "100%" }} borderRadius="32px" objectFit='contain' sx={{" &:hover":{boxShadow:'0 0.1875rem 0.75rem #8c98a440'}}} />
+              <Image src="MocDoc.png" h="100%" w={{ md: "76%", base: "100%" }} borderRadius="32px" objectFit='contain' sx={{" &:hover":{boxShadow:'0 0.1875rem 0.75rem #8c98a440'}}} />
               <Flex gap="23px" w={{ md: "24%", base: "100%" }} flexDirection="column">
                 <Flex justifyContent="space-between" alignItems="start" gap="20px">
                   <Text size="4xl" fontSize="40px" fontWeight={400}>
