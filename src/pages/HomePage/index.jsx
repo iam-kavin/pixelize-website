@@ -123,7 +123,7 @@ export default function HomePagePage() {
           >
             Here&#39;s how we can help
           </Text>
-          <Flex
+          <Flex 
             mt="112px"
             gap="24px"
             alignSelf="center"
@@ -132,17 +132,23 @@ export default function HomePagePage() {
             mx="auto"
             flexDirection={{ md: "row", base: "column" }}
             p={{ md: "", base: "20px" }}
+            sx={{"& :hover":{
+              border:'1px solid #000000',
+            }}}
           >
             <Flex
-              borderColor="gray.900_03"
+              borderColor="blue_gray.50"
               borderWidth="1px"
               borderStyle="solid"
               w="100%"
               flexDirection="column"
               p={{ base: "20px", sm: "40px" }}
               borderRadius="32px"
+              sx={{"& :hover":{
+                border:'unset',
+              }}}
             >
-              <Flex gap="24px" flexDirection="column">
+              <Flex gap="24px" flexDirection="column" >
                 <Flex alignItems="start">
                   <Text size="4xl" fontSize="40px" fontWeight={400} w="98%">
                     Product Development
@@ -165,6 +171,9 @@ export default function HomePagePage() {
               alignItems="center"
               p={{ base: "20px", sm: "40px" }}
               borderRadius="32px"
+              sx={{"& :hover":{
+                border:'unset',
+              }}}
             >
               <Flex alignSelf="stretch" flexDirection="column" alignItems="end">
                 <Image src="images/img_arrow_left.svg" h="8px" zIndex={1} w="8px" position="relative" />
@@ -187,6 +196,9 @@ export default function HomePagePage() {
               alignItems="center"
               p={{ base: "20px", sm: "40px" }}
               borderRadius="32px"
+              sx={{"& :hover":{
+                border:'unset',
+              }}}
             >
               <Flex alignSelf="stretch" flexDirection="column" alignItems="end">
                 <Image src="images/img_arrow_left.svg" h="8px" zIndex={2} w="8px" position="relative" />
