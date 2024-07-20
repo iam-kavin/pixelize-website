@@ -1,0 +1,38 @@
+.InstantQuoteCard {
+  display: flex;
+  flex-direction: column;
+  padding: 90px;
+  justify-content: space-between;
+  width: 78%;
+  margin: auto;
+  height: 417px;
+  top: 8191px;
+  left: 156px;
+  border-radius: 40px;
+  background: #191919;
+  color: #ffffff;
+}
+
+.InstantQuoteCard p {
+  width: 666px;
+  height: 96px;
+  font-size: 40px;
+  font-weight: 300;
+  line-height: 48px;
+  text-align: left;
+  top: 8271px;
+  left: 236px;
+}
+
+.InstantQuoteCard div {
+    width: 208px;
+height: Hug (56px)px;
+top: 8483px;
+left: 236px;
+padding: 16px 24px 16px 24px;
+gap: 8px;
+border-radius: 28px;
+opacity: 0px;
+background: #F2DB64;
+color: #191919;
+}

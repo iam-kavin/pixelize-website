@@ -1,0 +1,44 @@
+.QACardsContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 783px;
+  height: 247px;
+  top: 7224px;
+  left: 617px;
+  border-radius: 32px;
+  background: #f2f2f2;
+  margin-bottom: 15px;
+}
+
+.QACardsContainer_Question {
+  width: 420px;
+  height: 25px;
+  top: 7256px;
+  left: 649px;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 25px;
+  text-align: left;
+  color: #000000;
+}
+
+.QACardsContainer div {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.QACardsContainer_Answer {
+  width: 90%;
+  height: 132px;
+  top: 7305px;
+  left: 649px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  text-align: left;
+  color: #7d7c86;
+}

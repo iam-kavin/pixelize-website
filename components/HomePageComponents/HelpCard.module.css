@@ -1,0 +1,99 @@
+.HelpCard_container {
+  width: 95%;
+  margin: auto;
+  height: 532px;
+  top: 2388px;
+  left: 40px;
+  border-radius: 32px;
+  border: 1px 0px 0px 0px;
+  border: 1px solid #0e071e;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.HelpCard_container h5 {
+  width: 80%;
+  height: 100px;
+  top: 2428px;
+  left: 80px;
+  font-size: 2.5rem;
+  font-weight: 400;
+  line-height: 50px;
+  text-align: left;
+  color: #000000;
+}
+
+.HelpCard_container img {
+  width: 82%;
+  height: 220px;
+  top: 2552px;
+  left: 80px;
+  border-radius: 16px;
+  align-items: center;
+}
+
+.HelpCard_container p {
+  width: 80%;
+  height: 84px;
+  top: 2796px;
+  left: 80px;
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 28px;
+  text-align: left;
+  color: #7d7c86;
+}
+
+@media only screen and (max-width: 480px) {
+  .HelpCard_container {
+    width: 100%;
+    margin: auto;
+    height: 512px;
+    top: 2388px;
+    left: 40px;
+    border-radius: 32px;
+    border: 1px 0px 0px 0px;
+    border: 1px solid #0e071e;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .HelpCard_container h5 {
+    width: 80%;
+    height: 100px;
+    top: 2428px;
+    left: 80px;
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 50px;
+    text-align: left;
+    color: #000000;
+  }
+  
+  .HelpCard_container img {
+    width: 82%;
+    height: 220px;
+    top: 2552px;
+    left: 80px;
+    border-radius: 16px;
+    align-items: center;
+  }
+  
+  .HelpCard_container p {
+    width: 80%;
+    height: 84px;
+    top: 2796px;
+    left: 80px;
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: left;
+    color: #7d7c86;
+  }
+}

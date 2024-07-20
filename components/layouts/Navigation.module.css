@@ -1,0 +1,75 @@
+/* .Nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.Nav a {
+  color: #000;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 17.5px;
+  letter-spacing: 0.2em;
+  text-align: left;
+  padding: 50px;
+}
+
+.Nav_center {
+  display: flex;
+  justify-content: space-between;
+} */
+
+.Nav {
+  width: 96%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  min-height: 5rem;
+  align-items: center;
+}
+
+.Nav a {
+  width: max-content;
+}
+
+.Nav_company {
+font-size: 1.5rem;
+font-weight: 600;
+line-height: 1.875rem;
+text-align: left;
+}
+
+.Nav_center {
+  display: flex;
+  justify-content: center;
+  gap: 6.5rem;
+}
+
+@media only screen and (max-width: 480px) {
+  .Nav {
+    width: 96%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 7rem;
+    align-items: center;
+  }
+  
+  .Nav a {
+    width: max-content;
+  }
+  
+  .Nav_company {
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 1.875rem;
+  text-align: left;
+  }
+  
+  .Nav_center {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+  }
+}
