@@ -2,7 +2,7 @@
   height: 621px;
   border-radius: 0px 0px 40px 40px;
   background: #f2db64;
-  padding-top: 20px;
+  /* padding-top: 20px; */
 }
 
 .HeaderCard h2 {
@@ -456,14 +456,14 @@
 
 .QACardContainer h4 {
   width: 437px;
-height: 96px;
-top: 7244px;
-left: 40px;
-font-size: 40px;
-font-weight: 300;
-line-height: 48px;
-text-align: left;
-color: #000000;
+  height: 96px;
+  top: 7244px;
+  left: 40px;
+  font-size: 40px;
+  font-weight: 300;
+  line-height: 48px;
+  text-align: left;
+  color: #000000;
 }
 
 .BottomContainer {
@@ -478,9 +478,9 @@ color: #000000;
 
 .FooterCard {
   margin-top: -50px;
-height: 300px;
-padding-top: 80px;
-top: 8911px;
-border-radius: 40px 40px 0 0;
-background: #F2DB64;
+  height: 300px;
+  padding-top: 80px;
+  top: 8911px;
+  border-radius: 40px 40px 0 0;
+  background: #F2DB64;
 }

@@ -20,12 +20,13 @@
 } */
 
 .Nav {
-  width: 96%;
+  width: 100%;
   margin: auto;
   display: flex;
   justify-content: space-between;
   min-height: 5rem;
   align-items: center;
+  padding: 0% 10% 0% 10%
 }
 
 .Nav a {
@@ -33,10 +34,10 @@
 }
 
 .Nav_company {
-font-size: 1.5rem;
-font-weight: 600;
-line-height: 1.875rem;
-text-align: left;
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 1.875rem;
+  text-align: left;
 }
 
 .Nav_center {
@@ -55,18 +56,18 @@ text-align: left;
     min-height: 7rem;
     align-items: center;
   }
-  
+
   .Nav a {
     width: max-content;
   }
-  
+
   .Nav_company {
-  font-size: 1.5rem;
-  font-weight: 600;
-  line-height: 1.875rem;
-  text-align: left;
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 1.875rem;
+    text-align: left;
   }
-  
+
   .Nav_center {
     display: flex;
     justify-content: center;
