@@ -2,7 +2,7 @@ import RecentCards from "@/components/ServicePageComponents.js/RecentCards";
 import Footer from "@/components/layouts/Footer";
 import InstantQuoteCard from "@/components/layouts/InstantQuoteCard";
 import Navigation from "@/components/layouts/Navigation";
-import classes from "./WorkPage.module.css";
+import classes from "./WorkPage.module.css"; 
 
 const WorkPage = () => {
   return (

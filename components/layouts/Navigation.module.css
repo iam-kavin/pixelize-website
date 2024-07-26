@@ -1,32 +1,14 @@
-/* .Nav {
-  display: flex;
-  justify-content: space-between;
-}
-
-.Nav a {
-  color: #000;
-  text-decoration: none;
-  font-size: 14px;
-  font-weight: 500;
-  line-height: 17.5px;
-  letter-spacing: 0.2em;
-  text-align: left;
-  padding: 50px;
-}
-
-.Nav_center {
-  display: flex;
-  justify-content: space-between;
-} */
-
 .Nav {
-  width: 100%;
+  width: 96%;
   margin: auto;
   display: flex;
   justify-content: space-between;
   min-height: 5rem;
   align-items: center;
-  padding: 0% 10% 0% 10%
+}
+
+.Nav button {
+  display: none;
 }
 
 .Nav a {
@@ -46,11 +28,21 @@
   gap: 6.5rem;
 }
 
+.Nav_contact {
+  display:flex;
+  gap:1rem;
+  align-items:center;
+}
+
+.Mobile_Nav_Container {
+  display: none;
+}
+
 @media only screen and (max-width: 480px) {
   .Nav {
     width: 96%;
     margin: auto;
-    display: flex;
+    display: none;
     flex-direction: column;
     justify-content: space-between;
     min-height: 7rem;
@@ -62,7 +54,7 @@
   }
 
   .Nav_company {
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-weight: 600;
     line-height: 1.875rem;
     text-align: left;
@@ -72,5 +64,27 @@
     display: flex;
     justify-content: center;
     gap: 0.5rem;
+  }
+
+  .Mobile_Nav_Container {
+    display: block;
+  }
+
+  .Mobile_Nav_Icon {
+    padding-left: 4%;
+  }
+
+  .Mobile_Nav {
+    display: flex;
+    flex-direction: column;
+    font-size: 0.8rem;
+    margin-top: 0.5rem;
+    border-top: 1px solid;
+  }
+
+  .Mobile_Nav a {
+    margin-top: 0px;
+    border-bottom: 1px solid;
+    padding-left: 1rem;
   }
 }

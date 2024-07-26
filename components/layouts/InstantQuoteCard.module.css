@@ -25,14 +25,55 @@
 }
 
 .InstantQuoteCard div {
+  width: 208px;
+  height: Hug (56px) px;
+  top: 8483px;
+  left: 236px;
+  padding: 16px 24px 16px 24px;
+  gap: 8px;
+  border-radius: 28px;
+  opacity: 0px;
+  background: #f2db64;
+  color: #191919;
+}
+
+@media only screen and (max-width: 480px) {
+  .InstantQuoteCard {
+    display: flex;
+    flex-direction: column;
+    padding: 32px;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: auto;
+    height: 292px;
+    top: 8191px;
+    left: 156px;
+    border-radius: 1rem 1rem 0 0;
+    background: #191919;
+    color: #ffffff;
+  }
+
+  .InstantQuoteCard p {
+    width: 100%;
+    font-size: 1.5rem;
+    font-weight: 300;
+    line-height: 48px;
+    text-align: left;
+    top: 8271px;
+    left: 236px;
+  }
+
+  .InstantQuoteCard div {
     width: 208px;
-height: Hug (56px)px;
-top: 8483px;
-left: 236px;
-padding: 16px 24px 16px 24px;
-gap: 8px;
-border-radius: 28px;
-opacity: 0px;
-background: #F2DB64;
-color: #191919;
+    height: Hug (56px) px;
+    top: 8483px;
+    left: 236px;
+    padding: 16px 24px 16px 24px;
+    gap: 8px;
+    border-radius: 1rem;
+    opacity: 0px;
+    background: #f2db64;
+    color: #191919;
+  }
 }

@@ -5,6 +5,7 @@ import Footer from "@/components/layouts/Footer";
 import Navigation from "@/components/layouts/Navigation";
 import Link from "next/link";
 import classes from "./HomePage.module.css";
+import { BsArrowUpRight } from "react-icons/bs";
 
 const Home = () => {
   return (
@@ -79,7 +80,7 @@ const Home = () => {
       </div>
       <div className={classes.links_container}>
         <Link href={"/SignupPage"} className={classes.link1}>Get a Free Consultation</Link>
-        <Link href={"/ServicePage"} className={classes.link2}>Learn More About Our Services</Link>
+        <Link href={"/ServicePage"} className={classes.link2}>Learn More About Our Services<BsArrowUpRight fontSize="1em" stroke-width="1.5"/></Link>
       </div>
       <div className={classes.Footer_container}>
       <Footer />

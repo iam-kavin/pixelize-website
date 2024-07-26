@@ -4,7 +4,7 @@
   height: 532px;
   top: 2388px;
   left: 40px;
-  border-radius: 32px;
+  border-radius: 2rem;
   border: 1px 0px 0px 0px;
   border: 1px solid #0e071e;
   display: flex;
@@ -54,7 +54,7 @@
     height: 512px;
     top: 2388px;
     left: 40px;
-    border-radius: 32px;
+    border-radius: 1rem;
     border: 1px 0px 0px 0px;
     border: 1px solid #0e071e;
     display: flex;

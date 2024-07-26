@@ -11,4 +11,4 @@ const RecentCards = ({ title, image }) => {
   );
 };
 
-export default RecentCards;
+export default RecentCards; 

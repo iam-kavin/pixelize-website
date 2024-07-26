@@ -1,5 +1,5 @@
 import Navigation from "@/components/layouts/Navigation";
-import classes from "./SignUpPage.module.css";
+import classes from "./SignUpPage.module.css"; 
 
 const SignupPage = () => { 
   return (

@@ -7,6 +7,9 @@ import Navigation from "@/components/layouts/Navigation";
 import Link from "next/link";
 import classes from "./ServicePage.module.css";
 import BenefitsCard from "@/components/HomePageComponents/BenefitsCard";
+import { LuCheckCircle } from "react-icons/lu";
+import { BsArrowUpRight } from "react-icons/bs";
+import { ImQuotesLeft } from "react-icons/im";
 
 const ServicePage = () => {
   return (
@@ -41,14 +44,32 @@ const ServicePage = () => {
           <h3>Our Website Capabilities</h3>
           <ul>
             <div className={classes.capabilities_list_container}>
-              <li>Web Design</li>
-              <li>eCommerce</li>
-              <li>Wireframes</li>
+              <li>
+                <LuCheckCircle />
+                Web Design
+              </li>
+              <li>
+                <LuCheckCircle />
+                eCommerce
+              </li>
+              <li>
+                <LuCheckCircle />
+                Wireframes
+              </li>
             </div>
             <div className={classes.capabilities_list_container}>
-              <li>UX Design</li>
-              <li>Responsive Design</li>
-              <li>Strategy</li>
+              <li>
+                <LuCheckCircle />
+                UX Design
+              </li>
+              <li>
+                <LuCheckCircle />
+                Responsive Design
+              </li>
+              <li>
+                <LuCheckCircle />
+                Strategy
+              </li>
             </div>
           </ul>
         </div>
@@ -115,6 +136,7 @@ const ServicePage = () => {
         <div className={classes.BenefitsCardLink_container}>
           <Link href={"/"} className={classes.BenefitsCard_container_link1}>
             Get Demo for free
+            <BsArrowUpRight fontSize="1em" stroke-width="1" />
           </Link>
           <Link href={"/"} className={classes.BenefitsCard_container_link2}>
             Get in touch today
@@ -126,6 +148,7 @@ const ServicePage = () => {
       </h4>
       <div className={classes.CustomerReviewCard}>
         <div className={classes.CustomerReviewCardText}>
+          <ImQuotesLeft/>
           <p className={classes.CustomerReviewCardText1}>
             Haptica went above and beyond to make sure we got something we were
             happy with
@@ -162,12 +185,12 @@ const ServicePage = () => {
         </ul>
       </div>
       <div className={classes.BottomContainer}>
-      <div className={classes.InstantQuoteCardContainer}>
-        <InstantQuoteCard/>
+        <div className={classes.InstantQuoteCardContainer}>
+          <InstantQuoteCard />
         </div>
-      <div className={classes.FooterCard}>
-        <Footer />
-      </div>
+        <div className={classes.FooterCard}>
+          <Footer />
+        </div>
       </div>
     </>
   );

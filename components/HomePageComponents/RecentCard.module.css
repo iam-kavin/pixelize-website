@@ -41,16 +41,16 @@
   .RecentCard_container {
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: 1rem;
     margin: 0px;
   }
   
   .RecentCard_container img {
     max-width: 100%;
-    height: 355px;
+    height: auto;
     top: 3240px;
     left: 40px;
-    border-radius: 32px;
+    border-radius: 1rem;
   }
 
   .RecentCard_container div {
@@ -58,19 +58,19 @@
   }
   
   .RecentCard_container h5 {
-    height: 50px;
+    height: auto;
     margin-bottom: 10px;
     top: 3240px;
     left: 1078px; 
     font-size: 32px;
-    font-weight: 400;
+    font-weight: 300;
     line-height: 50px;
     text-align: center;
     color: #000000;
   }
   
   .RecentCard_container p {
-    height: 4rem;
+    height: auto;
     top: 3314px;
     left: 1078px;
     font-size: 18px;
