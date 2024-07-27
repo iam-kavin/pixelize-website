@@ -2,7 +2,7 @@
   height: 621px;
   border-radius: 0px 0px 40px 40px;
   background: #f2db64;
-  padding-top: 20px;
+  /* padding-top: 20px; */
 }
 
 .HeaderCard h2 {
@@ -121,13 +121,13 @@
 
 .capabilities_list_container svg {
   width: 1.5rem;
-height: 1.5rem;
-top: 1873px;
-left: 888px;
-gap: 0px;
-border: 1.67px 0px 0px 0px;
-opacity: 0px;
-color: #2FD892;
+  height: 1.5rem;
+  top: 1873px;
+  left: 888px;
+  gap: 0px;
+  border: 1.67px 0px 0px 0px;
+  opacity: 0px;
+  color: #2FD892;
 }
 
 .Card1 {
@@ -483,14 +483,14 @@ color: #2FD892;
 
 .QACardContainer h4 {
   width: 437px;
-height: 96px;
-top: 7244px;
-left: 40px;
-font-size: 40px;
-font-weight: 300;
-line-height: 48px;
-text-align: left;
-color: #000000;
+  height: 96px;
+  top: 7244px;
+  left: 40px;
+  font-size: 40px;
+  font-weight: 300;
+  line-height: 48px;
+  text-align: left;
+  color: #000000;
 }
 
 .BottomContainer {
@@ -505,11 +505,11 @@ color: #000000;
 
 .FooterCard {
   margin-top: -50px;
-height: 300px;
-padding-top: 80px;
-top: 8911px;
-border-radius: 40px 40px 0 0;
-background: #F2DB64;
+  height: 300px;
+  padding-top: 80px;
+  top: 8911px;
+  border-radius: 40px 40px 0 0;
+  background: #F2DB64;
 }
 
 
@@ -520,7 +520,7 @@ background: #F2DB64;
     background: #f2db64;
     padding-top: 20px;
   }
-  
+
   .HeaderCard h2 {
     display: flex;
     align-items: end;
@@ -536,7 +536,7 @@ background: #F2DB64;
     text-align: center;
     color: #000000;
   }
-  
+
   .img_container {
     margin: auto;
     margin-top: -64px;
@@ -546,7 +546,7 @@ background: #F2DB64;
     left: 155px;
     border-radius: 1rem;
   }
-  
+
   .para_container {
     margin: auto;
     margin-top: 64px;
@@ -561,7 +561,7 @@ background: #F2DB64;
     text-align: left;
     color: #000000;
   }
-  
+
   .title1_container {
     margin: 40px;
     height: 20px;
@@ -572,7 +572,7 @@ background: #F2DB64;
     line-height: 20px;
     text-align: left;
   }
-  
+
   .capabilities_container {
     height: 400px;
     top: 1543px;
@@ -584,7 +584,7 @@ background: #F2DB64;
     padding-top: 2rem;
     gap: 0px;
   }
-  
+
   .capabilities_container p {
     width: 100%;
     height: 190px;
@@ -596,7 +596,7 @@ background: #F2DB64;
     text-align: left;
     color: #ffffff;
   }
-  
+
   .capabilities_container h3 {
     width: 216px;
     height: 28px;
@@ -608,14 +608,14 @@ background: #F2DB64;
     text-align: left;
     color: #6d6d6d;
   }
-  
+
   .capabilities_container ul {
     padding-top: 20px;
     display: flex;
     flex-direction: row;
     gap: 40px;
   }
-  
+
   .capabilities_list_container {
     height: 96px;
     top: 1870px;
@@ -624,7 +624,7 @@ background: #F2DB64;
     flex-direction: column;
     gap: 10px;
   }
-  
+
   .capabilities_list_container li {
     font-size: 16px;
     font-weight: 400;
@@ -636,14 +636,14 @@ background: #F2DB64;
     align-items: center;
     gap: 1rem;
   }
-  
+
   .Card1 {
     margin: 50px 0 0 0;
     display: flex;
     flex-direction: column;
     gap: 40px;
   }
-  
+
   .Card1 img {
     width: 100%;
     height: auto;
@@ -651,14 +651,14 @@ background: #F2DB64;
     left: 72px;
     border-radius: 1rem;
   }
-  
+
   .Card1 div {
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 30px;
   }
-  
+
   .Card1 h4 {
     border-radius: 32px 0px 0px 0px;
     font-size: 18px;
@@ -667,7 +667,7 @@ background: #F2DB64;
     text-align: center;
     color: #7d7c86;
   }
-  
+
   .Card1 h5 {
     width: 94%;
     margin: auto;
@@ -680,7 +680,7 @@ background: #F2DB64;
     text-align: left;
     color: #000000;
   }
-  
+
   .Card1 p {
     width: 90%;
     margin: auto;
@@ -693,7 +693,7 @@ background: #F2DB64;
     text-align: left;
     color: #7d7c86;
   }
-  
+
   .Card1 a {
     width: 278px;
     margin-left: 5%;
@@ -713,7 +713,7 @@ background: #F2DB64;
     flex-direction: column-reverse;
     gap: 40px;
   }
-  
+
   .Card2 img {
     width: 100%;
     height: auto;
@@ -721,14 +721,14 @@ background: #F2DB64;
     left: 72px;
     border-radius: 1rem;
   }
-  
+
   .Card2 div {
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 30px;
   }
-  
+
   .Card2 h4 {
     border-radius: 32px 0px 0px 0px;
     font-size: 18px;
@@ -737,7 +737,7 @@ background: #F2DB64;
     text-align: center;
     color: #7d7c86;
   }
-  
+
   .Card2 h5 {
     width: 94%;
     margin: auto;
@@ -750,7 +750,7 @@ background: #F2DB64;
     text-align: left;
     color: #000000;
   }
-  
+
   .Card2 p {
     width: 90%;
     margin: auto;
@@ -763,7 +763,7 @@ background: #F2DB64;
     text-align: left;
     color: #7d7c86;
   }
-  
+
   .Card2 a {
     margin-left: 5%;
     height: Hug (56px) px;
@@ -775,14 +775,14 @@ background: #F2DB64;
     background: #000000;
     color: white;
   }
-  
+
   .title2_container {
     margin-top: 2rem;
     display: flex;
     justify-content: flex-end;
     width: 95%;
   }
-  
+
   .title2_container h4 {
     width: 748px;
     height: 112px;
@@ -794,13 +794,13 @@ background: #F2DB64;
     text-align: right;
     color: #000000;
   }
-  
+
   .title3_container {
     margin-top: 180px;
     margin-left: 5%;
     margin-bottom: 100px;
   }
-  
+
   .title3_container h4 {
     margin-bottom: 25px;
     width: 235px;
@@ -813,7 +813,7 @@ background: #F2DB64;
     text-align: left;
     color: #7d7c86;
   }
-  
+
   .title3_container p {
     width: 100%;
     height: 165px;
@@ -825,18 +825,18 @@ background: #F2DB64;
     text-align: left;
     color: #000000;
   }
-  
+
   .BenefitsCard_container {
     display: flex;
     width: 100%;
     flex-wrap: wrap;
     margin: 0 auto;
   }
-  
+
   .BenefitsCard_container li {
     width: 100%;
   }
-  
+
   .BenefitsCard_container_link1 {
     width: Hug (161px) px;
     height: Hug (24px) px;
@@ -844,7 +844,7 @@ background: #F2DB64;
     left: 1006px;
     gap: 12px;
   }
-  
+
   .BenefitsCard_container_link2 {
     width: Hug (193px) px;
     height: Hug (56px) px;
@@ -857,7 +857,7 @@ background: #F2DB64;
     background: #000000;
     color: white;
   }
-  
+
   .BenefitsCardLink_container {
     left: 100px;
     display: flex;
@@ -874,7 +874,7 @@ background: #F2DB64;
     width: auto;
     align-items: center;
   }
-  
+
   .title4_container {
     margin: auto;
     margin-top: 2rem;
@@ -888,7 +888,7 @@ background: #F2DB64;
     text-align: left;
     color: #000000;
   }
-  
+
   .CustomerReviewCard {
     width: 94%;
     margin: auto;
@@ -903,7 +903,7 @@ background: #F2DB64;
     justify-content: space-around;
     align-items: end;
   }
-  
+
   .CustomerReviewCardText {
     display: flex;
     flex-direction: column;
@@ -918,8 +918,8 @@ background: #F2DB64;
     width: 2rem;
     margin-top: 0rem;
     margin-bottom: 0rem;
- }
-  
+  }
+
   .CustomerReviewCardText1 {
     width: 100%;
     margin: auto;
@@ -933,7 +933,7 @@ background: #F2DB64;
     text-align: left;
     color: #000000;
   }
-  
+
   .CustomerReviewCardText2 {
     width: 100%;
     margin: auto;
@@ -947,7 +947,7 @@ background: #F2DB64;
     text-align: left;
     color: #000000;
   }
-  
+
   .CustomerReviewCardText3 {
     width: 100%;
     margin: auto;
@@ -961,14 +961,14 @@ background: #F2DB64;
     text-align: left;
     color: #000000;
   }
-  
+
   .CustomerReviewCard img {
     width: 100%;
     height: 435px;
     top: 5813px;
     left: 939px;
   }
-  
+
   .RecentCardContainer {
     margin-top: 17rem;
     width: 100%;
@@ -976,7 +976,7 @@ background: #F2DB64;
     top: 6455px;
     left: 41px;
   }
-  
+
   .RecentCardContainer h4 {
     font-size: 2rem;
     padding-right: 2%;
@@ -985,7 +985,7 @@ background: #F2DB64;
     text-align: right;
     color: #000000;
   }
-  
+
   .RecentCardContainer ul {
     margin-top: 1rem;
     display: flex;
@@ -993,7 +993,7 @@ background: #F2DB64;
     justify-content: center;
     gap: 3rem;
   }
-  
+
   .QACardContainer {
     display: flex;
     flex-direction: column;
@@ -1006,36 +1006,36 @@ background: #F2DB64;
     left: 40px;
     border: 1px 0px 0px 0px;
   }
-  
+
   .QACardContainer h4 {
     width: 98%;
     margin: auto;
-  height: 96px;
-  top: 7244px;
-  left: 40px;
-  font-size: 1.5rem;
-  font-weight: 300;
-  line-height: 48px;
-  text-align: left;
-  color: #000000;
+    height: 96px;
+    top: 7244px;
+    left: 40px;
+    font-size: 1.5rem;
+    font-weight: 300;
+    line-height: 48px;
+    text-align: left;
+    color: #000000;
   }
-  
+
   .BottomContainer {
     position: relative;
     overflow: hidden;
   }
-  
+
   .InstantQuoteCardContainer {
     position: relative;
   }
-  
-  
+
+
   .FooterCard {
     margin-top: -120px;
-  height: 300px;
-  padding-top: 80px;
-  top: 8911px;
-  border-radius: 40px 40px 0 0;
-  background: #F2DB64;
+    height: 300px;
+    padding-top: 80px;
+    top: 8911px;
+    border-radius: 40px 40px 0 0;
+    background: #F2DB64;
   }
 }
