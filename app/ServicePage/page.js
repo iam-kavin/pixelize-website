@@ -136,7 +136,7 @@ const ServicePage = () => {
         <div className={classes.BenefitsCardLink_container}>
           <Link href={"/"} className={classes.BenefitsCard_container_link1}>
             Get Demo for free
-            <BsArrowUpRight fontSize="1em" stroke-width="1" />
+            <BsArrowUpRight fontSize="1em" strokeWidth="1" />
           </Link>
           <Link href={"/"} className={classes.BenefitsCard_container_link2}>
             Get in touch today
@@ -148,7 +148,7 @@ const ServicePage = () => {
       </h4>
       <div className={classes.CustomerReviewCard}>
         <div className={classes.CustomerReviewCardText}>
-          <ImQuotesLeft/>
+          <ImQuotesLeft />
           <p className={classes.CustomerReviewCardText1}>
             Haptica went above and beyond to make sure we got something we were
             happy with

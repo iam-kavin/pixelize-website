@@ -12,16 +12,17 @@ const Home = () => {
     <>
       <div className={classes.HeaderCard}>
         <Navigation />
-        <h3>We bridge the gap between vision and reality</h3>
+        <h3>We Provide Web and App Development Services for Startups and SMBs</h3>
         <div className={classes.HeaderCard_para}>
-        <p>
-          Full-Stack Development & Marketing Solutions for Growth-Driven
-          Businesses
-        </p>
+          <p>
+            We help businesses achieve digital transformation through our customized
+            scalable white label solutions. Our team of experts will help you
+          </p>
+
         </div>
       </div>
       <div className={classes.img_container}>
-        <img src="\images\img_group_346.png" alt="image"/>
+        <img src="\images\img_group_346.png" alt="image" />
         <div className={classes.img_container_lines}>
           <p>Feeling overwhelmed by the product development process?</p>
           <p>
@@ -30,26 +31,35 @@ const Home = () => {
           </p>
         </div>
       </div>
-      <div className={classes.para_container}>
-        <p>
+
+      <div className="ml-5 mt-5 mb-5 max-w-full md:ml-10 md:mt-10 md:mb-20 lg:ml-20 lg:mt-60 lg:mb-20 max-w-4xl h-auto relative ">
+        <p className="text-base md:text-3xl lg:text-3xl font-light leading-6 md:leading-10 lg:leading-10 text-left">
           At Haptico, we're your one-stop shop for crafting exceptional digital
           products and propelling them to success. We're a passionate team of
-          <span> developers, designers, and marketing experts</span> who believe
+          <span className="font-medium"> developers, designers, and marketing experts</span> who believe
           in the power of collaboration. We partner with businesses like yours
           to bring your vision to life, from the initial concept to launch and
           beyond.
         </p>
       </div>
-      <div className={classes.title1_container}>
-        <h4>Here's how we can help</h4>
+
+      <div className="flex flex-col items-end mr-4 mb-10 md:mr-6 md:mb-30 lg:mr-9 lg:mb-40 relative">
+        <p className="text-right relative after:content-[''] after:block after:w-16 md:after:w-20 lg:after:w-24 after:h-0.5 after:bg-blue-500 after:absolute after:bottom-0 after:right-0 text-black-200">
+          Service We Offer
+        </p>
+        <h4 className="h-16 text-3xl md:text-4xl lg:text-6xl font-light leading-tight text-right text-black">
+          Solutions Customized
+          for Diverse Requirements
+        </h4>
       </div>
-      <ul className={classes.HelpCard_container}>
+      <ul className={`${classes.HelpCard_container} flex flex-wrap`}>
         {HelpCardData.map((OneCardData) => (
-          <li key={OneCardData.title}>
+          <li key={OneCardData.title} className="w-full sm:w-1/2 lg:w-1/3 p-2">
             <HelpCard {...OneCardData} />
           </li>
         ))}
       </ul>
+
       <h4 className={classes.title2_container}>Recent work</h4>
       <ul className={classes.RecentCard_container}>
         {RecentCardData.map((OneCardData) => (
@@ -58,32 +68,39 @@ const Home = () => {
           </li>
         ))}
       </ul>
+
       <div className={classes.title3_container}>
-      <h4>Benefits of Working with Us</h4>
+        <h4>Benefits of Working with Us</h4>
       </div>
       <div>
         <hr></hr>
-      <ul className={classes.BenefitsCard_container}>
-        {BenefitsCardData.map((OneCardData) => (
-          <li key={OneCardData.title}>
-            <BenefitsCard {...OneCardData} />
-          </li>
-        ))}
-      </ul>
-      <hr></hr>
+        <ul className={classes.BenefitsCard_container}>
+          {BenefitsCardData.map((OneCardData) => (
+            <li key={OneCardData.title}>
+              {/* <BenefitsCard {...OneCardData} /> */}
+              <div className={classes.BenefitsCard_container1}>
+                <h5>{OneCardData.title}</h5>
+                <p>{OneCardData.description}</p>
+              </div>
+            </li>
+          ))}
+        </ul>
+        <hr></hr>
       </div>
+
+
       <div className={classes.title4_container}>
-      <h4>
-        Ready to stop chasing trends and start creating something truly
-        remarkable?
-      </h4>
+        <h4>
+          Ready to stop chasing trends and start creating something truly
+          remarkable?
+        </h4>
       </div>
       <div className={classes.links_container}>
         <Link href={"/SignupPage"} className={classes.link1}>Get a Free Consultation</Link>
-        <Link href={"/ServicePage"} className={classes.link2}>Learn More About Our Services<BsArrowUpRight fontSize="1em" stroke-width="1.5"/></Link>
+        <Link href={"/ServicePage"} className={classes.link2}>Learn More About Our Services<BsArrowUpRight fontSize="1em" strokeWidth="1.5" /></Link>
       </div>
       <div className={classes.Footer_container}>
-      <Footer />
+        <Footer />
       </div>
     </>
   );
@@ -93,22 +110,25 @@ export default Home;
 
 const HelpCardData = [
   {
-    title: "Product Development",
+    title: "Development",
     image: "/images/img_rectangle_5.png",
     description:
-      "Our skilled developers build robust front-end and back-end solutions tailored to your specific needs.",
+      "Turn design ideas into usable digital products that provide overarching value and a seamless customer experience.",
+    list: ["Mobile App Development", "Web Development", "Progressive Web App Development", "UI/UX Design"],
   },
   {
-    title: "Marketing Mastery",
+    title: "Engineering",
     image: "/images/img_rectangle_6.png",
     description:
-      "We leverage SEO, SEM, and SMM strategies to ensure your product reaches the right audience.",
+      "Craft and build innovative software tools and applications to achieve sustainable outcomes and business goals.",
+    list: ["Product Engineering", "Application Modernization", "Data Engineering"],
   },
   {
-    title: "Data-Driven Decisions",
+    title: "Blockchain",
     image: "/images/img_rectangle_7.png",
     description:
-      "We utilize data insights to optimize your product and marketing strategies for maximum impact.",
+      "Our experienced blockchain development team can boost your crypto-venture with our range of tailored solutions.",
+    list: ["NFT Marketplace", "defi-menuDeFi Solutions", "ICO Services"],
   },
 ];
 

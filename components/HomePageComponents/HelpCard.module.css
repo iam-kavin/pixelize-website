@@ -63,7 +63,7 @@
     align-items: center;
     gap: 20px;
   }
-  
+
   .HelpCard_container h5 {
     width: 80%;
     height: 100px;
@@ -75,7 +75,7 @@
     text-align: left;
     color: #000000;
   }
-  
+
   .HelpCard_container img {
     width: 82%;
     height: 220px;
@@ -84,7 +84,7 @@
     border-radius: 16px;
     align-items: center;
   }
-  
+
   .HelpCard_container p {
     width: 80%;
     height: 84px;
