@@ -164,7 +164,7 @@
 }
 
 .title4_container {
-  margin: 100px 0 100px 35px;
+  margin: 50px 0 50px 35px;
   max-width: 945px;
   height: 240px;
   top: 5218px;
@@ -182,7 +182,7 @@
 .links_container {
   display: flex;
   gap: 25px;
-  margin: 280px 0 100px 35px;
+  margin: 100px 0 100px 35px;
   align-items: center;
 }
 

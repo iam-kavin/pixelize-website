@@ -6,6 +6,7 @@ import Navigation from "@/components/layouts/Navigation";
 import Link from "next/link";
 import classes from "./HomePage.module.css";
 import { BsArrowUpRight } from "react-icons/bs";
+import { FaReact } from 'react-icons/fa';
 
 const Home = () => {
   return (
@@ -54,7 +55,7 @@ const Home = () => {
       </div>
       <ul className={`${classes.HelpCard_container} flex flex-wrap`}>
         {HelpCardData.map((OneCardData) => (
-          <li key={OneCardData.title} className="w-full sm:w-1/2 lg:w-1/3 p-2">
+          <li key={OneCardData.title} className="w-full sm:w-1/2 lg:w-1/4 p-2">
             <HelpCard {...OneCardData} />
           </li>
         ))}
@@ -69,24 +70,36 @@ const Home = () => {
         ))}
       </ul>
 
-      <div className={classes.title3_container}>
-        <h4>Benefits of Working with Us</h4>
+      <div className="w-[97%] flex justify-end h-20 mt-[80px] mb-[50px] relative">
+        <h4 className="text-7xl font-light leading-[80px] text-right text-black">Benefits of Working with Us</h4>
       </div>
-      <div>
-        <hr></hr>
-        <ul className={classes.BenefitsCard_container}>
+
+      <div className="p-4">
+        <hr className="my-4 border-gray-300" />
+        <ul className="flex flex-wrap -mx-2">
           {BenefitsCardData.map((OneCardData) => (
-            <li key={OneCardData.title}>
-              {/* <BenefitsCard {...OneCardData} /> */}
-              <div className={classes.BenefitsCard_container1}>
-                <h5>{OneCardData.title}</h5>
-                <p>{OneCardData.description}</p>
+            <li key={OneCardData.title} className="w-full sm:w-1/2 lg:w-1/4 px-2 mb-4">
+              <div className="bg-white shadow-lg rounded-xl overflow-hidden transform transition duration-500 hover:scale-105 h-full flex flex-col">
+                <img src={OneCardData.imageUrl} alt={OneCardData.title} className="w-full h-32 object-cover" />
+                <div className="p-6 flex flex-col flex-grow">
+                  <div className="flex items-center mb-5">
+                    <FaReact className="text-indigo-600 mr-2" /> {/* React Icon */}
+                    <h5 className="text-2xl font-bold">{OneCardData.title}</h5>
+                  </div>
+                  <p className="text-gray-700 mb-4">{OneCardData.description}</p>
+                  <ul className="list-disc list-inside space-y-2">
+                    {OneCardData.list.map((item) => (
+                      <li key={item} className="text-gray-600 mb-6 leading-7">{item}</li>
+                    ))}
+                  </ul>
+                </div>
               </div>
             </li>
           ))}
         </ul>
-        <hr></hr>
+        <hr className="my-4 border-gray-300" />
       </div>
+
 
 
       <div className={classes.title4_container}>
@@ -110,27 +123,65 @@ export default Home;
 
 const HelpCardData = [
   {
-    title: "Development",
-    image: "/images/img_rectangle_5.png",
+    title: "Evolve",
+    image: "/images/helper1.png",
     description:
-      "Turn design ideas into usable digital products that provide overarching value and a seamless customer experience.",
-    list: ["Mobile App Development", "Web Development", "Progressive Web App Development", "UI/UX Design"],
+      "Build product & platform strategies based on customer needs & insights.",
+    list: ["Design Thinking - led Product Discovery ", "Digital Platform & ProductManagement", "Business-IT Consulting"],
   },
   {
-    title: "Engineering",
-    image: "/images/img_rectangle_6.png",
+    title: "Engage",
+    image: "/images/helper2.png",
     description:
-      "Craft and build innovative software tools and applications to achieve sustainable outcomes and business goals.",
-    list: ["Product Engineering", "Application Modernization", "Data Engineering"],
+      "Create exceptional experiences across platforms & devices to build lasting customer relationships.",
+    list: ["Design Strategy", "UX/UI", "Creative Vision & Design", "Design Systems", "Design QC"],
   },
   {
-    title: "Blockchain",
-    image: "/images/img_rectangle_7.png",
+    title: "Engineer",
+    image: "/images/helper3.png",
     description:
-      "Our experienced blockchain development team can boost your crypto-venture with our range of tailored solutions.",
-    list: ["NFT Marketplace", "defi-menuDeFi Solutions", "ICO Services"],
+      "Harness technologies to bring alive digital experience & enhance IT operations.",
+    list: ["Technology Vision & Architecture", "Consumer & Enterprise Application Development", "Application Modernization", "Testing & Quality Assurance", "Embedded Engineering Ecosystem"],
+  },
+  {
+    title: "Empower",
+    image: "/images/helper4.png",
+    description:
+      "Implement processes & optimize business operations through data & security solutions.",
+    list: ["Data & Analytics", "Cybersecurity", "Enterprise Applications", "Cloud & Infrastructure"],
   },
 ];
+
+// const HelpCardData = [
+//   {
+//     title: "Development",
+//     image: "/images/img_rectangle_5.png",
+//     description:
+//       "Turn design ideas into usable digital products that provide overarching value and a seamless customer experience.",
+//     list: ["Mobile App Development", "Web Development", "Progressive Web App Development", "UI/UX Design"],
+//   },
+//   {
+//     title: "Engineering",
+//     image: "/images/img_rectangle_6.png",
+//     description:
+//       "Craft and build innovative software tools and applications to achieve sustainable outcomes and business goals.",
+//     list: ["Product Engineering", "Application Modernization", "Data Engineering"],
+//   },
+//   {
+//     title: "Blockchain",
+//     image: "/images/img_rectangle_7.png",
+//     description:
+//       "Our experienced blockchain development team can boost your crypto-venture with our range of tailored solutions.",
+//     list: ["NFT Marketplace", "defi-menuDeFi Solutions", "ICO Services"],
+//   },
+//   {
+//     title: "Blockchain",
+//     image: "/images/img_rectangle_7.png",
+//     description:
+//       "Our experienced blockchain development team can boost your crypto-venture with our range of tailored solutions.",
+//     list: ["NFT Marketplace", "defi-menuDeFi Solutions", "ICO Services"],
+//   },
+// ];
 
 const RecentCardData = [
   {
@@ -158,19 +209,35 @@ const BenefitsCardData = [
     title: "Seamless Collaboration",
     description:
       "We work closely with you to understand your vision and goals.",
+    list: ["Transparent Communication: We prioritize clear and open communication to ensure your vision and goals are fully understood and implemented.",
+      "Dedicated Team: Work with a dedicated team of experienced professionals who are committed to your project's success.",
+      "Agile Methodologies: Our agile development process ensures flexibility and adaptability, allowing us to quickly respond to your feedback and evolving requirements."],
+    imageUrl: "/images/withus1.jpeg" // Example image URL
   },
   {
     title: "Faster Time to Market",
     description:
       "Our streamlined approach helps you launch your product efficiently.",
+    list: ["Efficient Processes: Our streamlined development processes are designed to accelerate project timelines without compromising on quality.",
+      "Rapid Prototyping: We leverage rapid prototyping techniques to quickly bring your ideas to life and gather valuable user feedback early in the development cycle.",
+      "Continuous Delivery: With our continuous delivery approach, we ensure that new features and updates are deployed quickly and reliably."],
+    imageUrl: "/images/withus2.jpeg" // Example image URL
   },
   {
     title: "Scalable Solutions",
     description: "We build products that can grow alongside your business.",
+    list: ["Custom Development: We build tailored solutions that are designed to grow with your business and adapt to changing market demands.",
+      "Modern Technologies: Utilizing the latest technologies and best practices, we create scalable and future-proof web applications.",
+      "Cloud Integration: Our expertise in cloud integration ensures that your web solutions are scalable, secure, and highly available."],
+    imageUrl: "/images/withus3.jpg" // Example image URL
   },
   {
     title: "Measurable Results",
     description:
       "We track key metrics to demonstrate the success of your product and marketing efforts.",
+    list: ["Data-Driven Approach: We use analytics and data-driven insights to guide our development process and optimize your web solutions for performance and user engagement.",
+      "Performance Monitoring: Continuous monitoring and optimization ensure that your web applications perform at their best, providing an excellent user experience.",
+      "ROI Focus: Our goal is to deliver solutions that not only meet your technical requirements but also drive tangible business results and a strong return on investment."],
+    imageUrl: "/images/withus4.jpeg" // Example image URL
   },
 ];
