@@ -2,12 +2,12 @@ import RecentCards from "@/components/ServicePageComponents.js/RecentCards";
 import Footer from "@/components/layouts/Footer";
 import InstantQuoteCard from "@/components/layouts/InstantQuoteCard";
 import Navigation from "@/components/layouts/Navigation";
-import classes from "./WorkPage.module.css"; 
+import classes from "./WorkPage.module.css";
 
 const WorkPage = () => {
   return (
     <div className={classes.WorkPageCard}>
-      <div className={classes.nav_container}> 
+      <div className={classes.nav_container}>
         <Navigation />
       </div>
       <div className={classes.title1_container}>
@@ -46,8 +46,8 @@ const WorkPage = () => {
       </div>
       <div className={classes.logo_description}>
         <div>
-        <h5>The logo</h5>
-        <h6>Identity of Cream's digital presence</h6>
+          <h5>The logo</h5>
+          <h6>Identity of Cream's digital presence</h6>
         </div>
         <p>
           Pretium nunc nulla eu dolor pellentesque. Hendrerit tempor malesuada
@@ -57,22 +57,22 @@ const WorkPage = () => {
         </p>
       </div>
       <div className={classes.image1_container}>
-      <img src="./images/a1a130987014a5837c078ddf2406f8dc.jpeg" alt="image"></img>
+        <img src="./images/a1a130987014a5837c078ddf2406f8dc.jpeg" alt="image"></img>
       </div>
       <div className={classes.images2_container}>
         <img
           src="./images/img_rectangle_16.png"
           alt="image"
-        ></img> 
+        ></img>
         <img
           src="./images/img_rectangle_17.png"
           alt="image"
         ></img>
-      </div>  
+      </div>
       <div className={classes.logo_description}>
         <div>
-        <h5>The logo</h5>
-        <h6>Identity of Cream's digital presence</h6>
+          <h5>The logo</h5>
+          <h6>Identity of Cream's digital presence</h6>
         </div>
         <p>
           Pretium nunc nulla eu dolor pellentesque. Hendrerit tempor malesuada
@@ -108,14 +108,14 @@ const WorkPage = () => {
             </li>
           ))}
         </ul>
-        </div>
-        <div className={classes.BottomContainer}>
-      <div className={classes.InstantQuoteCardContainer}>
-        <InstantQuoteCard background="#020202"/>
-        </div>
-      <div className={classes.FooterCard}>
-        <Footer />
       </div>
+      <div className={classes.BottomContainer}>
+        <div className={classes.InstantQuoteCardContainer}>
+          <InstantQuoteCard background="#020202" />
+        </div>
+
+        <Footer />
+
       </div>
     </div>
   );

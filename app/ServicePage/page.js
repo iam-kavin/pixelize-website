@@ -1,279 +1,116 @@
-import QACards from "@/components/ServicePageComponents.js/QACards";
-import RecentCards from "@/components/ServicePageComponents.js/RecentCards";
-import ServiceCards from "@/components/ServicePageComponents.js/ServicesCards";
-import Footer from "@/components/layouts/Footer";
-import InstantQuoteCard from "@/components/layouts/InstantQuoteCard";
+import React from "react";
 import Navigation from "@/components/layouts/Navigation";
 import Link from "next/link";
-import classes from "./ServicePage.module.css";
-import BenefitsCard from "@/components/HomePageComponents/BenefitsCard";
-import { LuCheckCircle } from "react-icons/lu";
-import { BsArrowUpRight } from "react-icons/bs";
-import { ImQuotesLeft } from "react-icons/im";
+
 
 const ServicePage = () => {
   return (
     <>
-      <div className={classes.HeaderCard}>
-        <Navigation />
-        <h2>Product Development</h2>
+      <div className="">
+        <div className="relative h-[700px] bg-[#f2db64] rounded-b-[40px]">
+          <Navigation />
+          <div className="relative z-10 px-4 md:px-20">
+            <h2 className="text-3xl md:text-6xl pt-10 md:pt-20 pb-3">
+              Engineering digital transformation by design
+            </h2>
+            <p className="text-lg md:text-2xl">
+              Driving digital transformation through strategy, design, product engineering, data analytics & business process change
+            </p>
+          </div>
+          <div className="absolute w-full pt-20">
+            <img
+              src="/images/img_rectangle_1.png"
+              alt="image"
+              className="mx-auto w-3/4 md:w-1/2 "
+            />
+          </div>
+        </div>
       </div>
-      <img
-        src="/images/img_rectangle_1.png"
-        alt="image"
-        width="100px"
-        className={classes.img_container}
-      ></img>
-      <p className={classes.para_container}>
-        Pretium nunc nulla eu dolor pellentesque. Hendrerit tempor malesuada
-        justo aliquet accumsan nulla arcu dolor. Tortor lorem nec ut vulputate
-        purus quis tellus proin at. Urna diam blandit at sit pellentesque
-        lacinia lectus rhoncus. Turpis egestas venenatis nulla bibendum.
-      </p>
-      <hr></hr>
-      <p className={classes.title1_container}>
-        Brands trust us are more than 500
-      </p>
-      {/* <div> Brand Logos </div> */}
-      <div className={classes.capabilities_container}>
-        <p>
-          Are you a startup brand, well established company, in the India or
-          worldwide? It doesn't matter. We work with a range of clients.
+      <div className="px-4 md:px-20 py-10 mt-40">
+        <h3 className="text-3xl md:text-6xl pb-20 text-centre">Digital <span className="text-[#f2db64]">transformation services </span></h3>
+        <p className="text-lg md:text-2xl leading-relaxed md:leading-loose text-center	">
+          We provide end-to-end digital transformation services and solutions in digital consulting, customer experience designs, UI/UX designs, mobile app development, AI & machine learning solutions, automation, platform engineering, data analytics, enterprise software development, SAP implementation, cybersecurity solutions and other emerging technologies.
         </p>
-        <div>
-          <h3>Our Website Capabilities</h3>
-          <ul>
-            <div className={classes.capabilities_list_container}>
-              <li>
-                <LuCheckCircle />
-                Web Design
-              </li>
-              <li>
-                <LuCheckCircle />
-                eCommerce
-              </li>
-              <li>
-                <LuCheckCircle />
-                Wireframes
-              </li>
+
+        <div className="">
+          {ServiceDetails.map((service, index) => (
+            <div key={index} className="flex flex-col md:flex-row gap-10 py-10">
+              <div className="md:w-1/2">
+                <h3 className="text-3xl md:text-6xl pb-5">{service.title}</h3>
+                <p className="text-lg md:text-3xl pb-5 leading-relaxed md:leading-10	">{service.title2}</p>
+                <p className="text-lg md:text-xl pb-5 leading-relaxed md:leading-10">{service.description}</p>
+                <ul>
+                  {service.list.map((item, itemIndex) => (
+                    <li key={itemIndex} className="leading-[3rem]">{"- " + item}</li>
+                  ))}
+                </ul>
+              </div>
+              <div className="md:w-1/2 min-h-[300px] p-4  rounded-lg flex items-center justify-center">
+                <img src={service.image} alt="image" className="max-h-full max-w-full object-cover rounded-md" />
+              </div>
+
             </div>
-            <div className={classes.capabilities_list_container}>
-              <li>
-                <LuCheckCircle />
-                UX Design
-              </li>
-              <li>
-                <LuCheckCircle />
-                Responsive Design
-              </li>
-              <li>
-                <LuCheckCircle />
-                Strategy
-              </li>
-            </div>
-          </ul>
-        </div>
-      </div>
-      <div className={classes.Card1}>
-        <img src="/images/img_rectangle_13.png" width="100px"></img>
-        <div>
-          <h4>Our Website Capabilities</h4>
-          <h5>
-            We know it’s hard for brands to setup an online experience, and
-            budgets can be tight.
-          </h5>
-          <p>
-            Magna sit duis netus mauris cursus pellentesque pellentesque
-            imperdiet. Commodo nullam tellus turpis dapibus et lectus egestas
-            vitae. Vestibulum risus dolor enim turpis. Aliquam adipiscing id
-            tristique nec. Non quis id fermentum vitae pulvinar. Semper elit at
-            posuere mauris phasellus. Dignissim posuere faucibus phasellus sit
-            iaculis elementum id ipsum. Enim mattis pellentesque.
-          </p>
-          <Link href={"/"}>Schedule a call with our team</Link>
-        </div>
-      </div>
-      <div className={classes.Card2}>
-        <div>
-          <h4>Our Website Capabilities</h4>
-          <h5>
-            We know it’s hard for brands to setup an online experience, and
-            budgets can be tight.
-          </h5>
-          <p>
-            Magna sit duis netus mauris cursus pellentesque pellentesque
-            imperdiet. Commodo nullam tellus turpis dapibus et lectus egestas
-            vitae. Vestibulum risus dolor enim turpis. Aliquam adipiscing id
-            tristique nec. Non quis id fermentum vitae pulvinar. Semper elit at
-            posuere mauris phasellus. Dignissim posuere faucibus phasellus sit
-            iaculis elementum id ipsum. Enim mattis pellentesque.
-          </p>
-          <Link href={"/"}>Get Demo for free</Link>
-        </div>
-        <img src="/images/img_rectangle_13.png" width="100px"></img>
-      </div>
-      <div className={classes.title2_container}>
-        <h4>
-          We use the latest technologies available to create timeless products.
-        </h4>
-      </div>
-      {/* <div>Logos</div> */}
-      <div className={classes.title3_container}>
-        <h4>What we can help you with</h4>
-        <p>
-          A team of product development experts that can help you design and
-          build a website you're proud of
-        </p>
-      </div>
-      <div>
-        <ul className={classes.BenefitsCard_container}>
-          {ServicesCardsData.map((OneCardData) => (
-            <li key={OneCardData.title}>
-              <BenefitsCard {...OneCardData} />
-            </li>
           ))}
-        </ul>
-        <div className={classes.BenefitsCardLink_container}>
-          <Link href={"/"} className={classes.BenefitsCard_container_link1}>
-            Get Demo for free
-            <BsArrowUpRight fontSize="1em" strokeWidth="1" />
-          </Link>
-          <Link href={"/"} className={classes.BenefitsCard_container_link2}>
-            Get in touch today
-          </Link>
         </div>
+
       </div>
-      <h4 className={classes.title4_container}>
-        What our happy clients say about us
-      </h4>
-      <div className={classes.CustomerReviewCard}>
-        <div className={classes.CustomerReviewCardText}>
-          <ImQuotesLeft />
-          <p className={classes.CustomerReviewCardText1}>
-            Haptica went above and beyond to make sure we got something we were
-            happy with
-          </p>
-          <p className={classes.CustomerReviewCardText2}>Johnson Root</p>
-          <p className={classes.CustomerReviewCardText3}>
-            Creative Director, Black Wheel
-          </p>
-        </div>
-        <img src="/images/img_rectangle_22.png" alt="image" width="100px"></img>
-        {/* <div>Forward Backward</div> */}
-      </div>
-      <div className={classes.RecentCardContainer}>
-        <div>
-          <h4>Our favourite</h4>
-          <h4>Recent Developed Products</h4>
-        </div>
-        <ul>
-          {RecentCardsData.map((OneCardData) => (
-            <li key={OneCardData.title}>
-              <RecentCards {...OneCardData} />
-            </li>
-          ))}
-        </ul>
-      </div>
-      <div className={classes.QACardContainer}>
-        <h4>The answers to your questions.</h4>
-        <ul>
-          {QACardsData.map((OneCardData) => (
-            <li key={OneCardData.question}>
-              <QACards {...OneCardData} />
-            </li>
-          ))}
-        </ul>
-      </div>
-      <div className={classes.BottomContainer}>
-        <div className={classes.InstantQuoteCardContainer}>
-          <InstantQuoteCard />
-        </div>
-        <div className={classes.FooterCard}>
-          <Footer />
-        </div>
-      </div>
+
     </>
   );
 };
 
 export default ServicePage;
 
-const WebsiteCapabilities = [
-  "Web Design",
-  "eCommerce",
-  "Wireframes",
-  "UX Design",
-  "Responsive Design",
-  "Strategy",
-];
 
-const ServicesCardsData = [
+const ServiceDetails = [
   {
-    title: "Web Design",
+    title: "Digital Consulting",
+    title2: "Accelerate product innovation, navigate business challenges, and create successful business strategies.",
     description:
-      "We work closely with you to understand your vision and goals.",
+      "Our digital consultants bring in cross-industry expertise to drive business success – from product launches to IT transitions. We combine actionable user-centric strategies with business and technology acumen.",
+    list: ["Design thinking-led product discovery", "Digital platform & product management", "Business-IT alignment consulting", "Design thinking workshops"],
+    image: "/images/img_rectangle_13.png",// 750&480
   },
   {
-    title: "eCommerce",
+    title: "Customer Experience Design",
+    title2: "Engage customers with exceptional experiences across platforms and devices to build lasting relationships.",
     description:
-      "Our streamlined approach helps you launch your product efficiently.",
+      "Our team of experienced designers are creative thinkers and problem solvers. Beyond just good-looking designs, we craft solutions that have a business impact. Our understanding of the product intent, consumer behavior, business objectives, and technology helps in crafting design solutions that help build customer loyalty.",
+    list: ["Design strategy", "Design audit", "Creative vision", "UX/UI", "Design systems"],
+    image: "/images/img_rectangle_13.png",
   },
   {
-    title: "Wireframes",
-    description: "We build products that can grow alongside your business.",
-  },
-  {
-    title: "UX Design",
+    title: "Platform Engineering & IT Modernization",
+    title2: "Proven engineering skills and experience to bring alive great digital experiences.",
     description:
-      "We track key metrics to demonstrate the success of your product and marketing efforts.",
+      "With over 25 years of proven expertise in engineering software solutions, we enjoy a reputation for delivering great digital products across platforms and devices. Our skilled team of developers has deep experience in emerging tech such as blockchain, AI/ML, Voice, and more.",
+    list: ["Technology vision & architecture", "Consumer & enterprise application development", "Digital business technology platform", "Application modernization", "Agile delivery teams", "Testing-as-a-service"],
+    image: "/images/img_rectangle_13.png",
   },
   {
-    title: "Responsive Design",
+    title: "Data & Analytics",
+    title2: "Not just data but insights that help drive personalization and profitability.",
     description:
-      "We work closely with you to understand your vision and goals.",
+      "Our data analytics team generates data-driven insights to strengthen your decision-making and stimulate your business performance. We work to enhance your analytical and CRM abilities with real-time behavior analytics resources.",
+    list: ["Data strategy & consulting", "Data experiment studio", "Applied data science", "Intelligent systems", "DataOps"],
+    image: "/images/img_rectangle_13.png",
   },
   {
-    title: "Strategy",
+    title: "Enterprise Applications",
+    title2: "Transform to an intelligent enterprise with end-to-end SAP services from Robosoft",
     description:
-      "Our streamlined approach helps you launch your product efficiently.",
+      "We offer a complete suite of SAP solutions designed to transform your business ecosystem. From strategy to implementation – our SAP specialists optimize your processes, aiding your transition into an Intelligent Enterprise.",
+    list: ["SAP consulting & business advisory", "SAP implementation", "Application managed services (AMS)", "Cloud services"],
+    image: "/images/img_rectangle_13.png",
   },
-];
+  {
+    title: "Cybersecurity",
+    title2: "Shield your organization from cyber threats with 360-degree security.",
+    description:
+      "Our cybersecurity specialists assess your security infrastructure and adopt a compliance-led security approach shielding the confidentiality, integrity, and availability of information across your enterprise.",
+    list: ["Cyber strategy", "Application security", "Data security", "Endpoint security", "Cloud security"],
+    image: "/images/img_rectangle_13.png",
+  },
+]
 
-const RecentCardsData = [
-  { title: "Config1", image: "/images/img_rectangle_34.png" },
-  { title: "Config2", image: "/images/img_rectangle_34.png" },
-  { title: "Config3", image: "/images/img_rectangle_34.png" },
-];
 
-const QACardsData = [
-  {
-    question: "How long does it take to build a website1?",
-    answer:
-      "Timelines depend on the spec of the website project, but here are some guidelines...1)Shopify projects usually take around four weeks.2)Craft CMS projects usually take a minimum of five weeks.3)Craft Commerce projects usually take a minimum of eight weeks.",
-  },
-  {
-    question: "How long does it take to build a website2?",
-    answer:
-      "Timelines depend on the spec of the website project, but here are some guidelines...1)Shopify projects usually take around four weeks.2)Craft CMS projects usually take a minimum of five weeks.3)Craft Commerce projects usually take a minimum of eight weeks.",
-  },
-  {
-    question: "How long does it take to build a website3?",
-    answer:
-      "Timelines depend on the spec of the website project, but here are some guidelines...1)Shopify projects usually take around four weeks.2)Craft CMS projects usually take a minimum of five weeks.3)Craft Commerce projects usually take a minimum of eight weeks.",
-  },
-  {
-    question: "How long does it take to build a website4?",
-    answer:
-      "Timelines depend on the spec of the website project, but here are some guidelines...1)Shopify projects usually take around four weeks.2)Craft CMS projects usually take a minimum of five weeks.3)Craft Commerce projects usually take a minimum of eight weeks.",
-  },
-  {
-    question: "How long does it take to build a website5?",
-    answer:
-      "Timelines depend on the spec of the website project, but here are some guidelines...1)Shopify projects usually take around four weeks.2)Craft CMS projects usually take a minimum of five weeks.3)Craft Commerce projects usually take a minimum of eight weeks.",
-  },
-  {
-    question: "How long does it take to build a website6?",
-    answer:
-      "Timelines depend on the spec of the website project, but here are some guidelines...1)Shopify projects usually take around four weeks.2)Craft CMS projects usually take a minimum of five weeks.3)Craft Commerce projects usually take a minimum of eight weeks.",
-  },
-];
