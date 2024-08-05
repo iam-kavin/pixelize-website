@@ -18,8 +18,9 @@ const Navigation = () => {
           <FiAlignJustify />
         </button>
         <div className={classes.Nav_center}>
+          <Link href={"/"}>Home</Link>
           <Link href={"/ServicePage"}>WHAT WE DO</Link>
-          <Link href={"/WorkPage"}>OUR WORK</Link>
+          {/* <Link href={"/WorkPage"}>OUR WORK</Link> */}
           <Link href={"/WhyUsPage"}>WHY US?</Link>
         </div>
         <div className={classes.Nav_contact}>

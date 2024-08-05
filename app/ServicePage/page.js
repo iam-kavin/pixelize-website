@@ -1,6 +1,7 @@
 import React from "react";
 import Navigation from "@/components/layouts/Navigation";
 import Link from "next/link";
+import Footer from "@/components/layouts/Footer";
 
 
 const ServicePage = () => {
@@ -26,34 +27,77 @@ const ServicePage = () => {
           </div>
         </div>
       </div>
-      <div className="px-4 md:px-20 py-10 mt-40">
-        <h3 className="text-3xl md:text-6xl pb-20 text-centre">Digital <span className="text-[#f2db64]">transformation services </span></h3>
-        <p className="text-lg md:text-2xl leading-relaxed md:leading-loose text-center	">
+      <div className="px-4 md:px-20 py-10 mt-40 mb-2054">
+        <h3 className="text-3xl md:text-6xl pb-10 text-centre">Digital <span className="text-[#f2db64]">transformation services </span></h3>
+        <p className="text-lg md:text-2xl leading-relaxed md:leading-loose text-center pb-10">
           We provide end-to-end digital transformation services and solutions in digital consulting, customer experience designs, UI/UX designs, mobile app development, AI & machine learning solutions, automation, platform engineering, data analytics, enterprise software development, SAP implementation, cybersecurity solutions and other emerging technologies.
         </p>
-
+        <hr className="border-t-4 border-[#f2db64] my-4" />
         <div className="">
           {ServiceDetails.map((service, index) => (
-            <div key={index} className="flex flex-col md:flex-row gap-10 py-10">
-              <div className="md:w-1/2">
-                <h3 className="text-3xl md:text-6xl pb-5">{service.title}</h3>
-                <p className="text-lg md:text-3xl pb-5 leading-relaxed md:leading-10	">{service.title2}</p>
-                <p className="text-lg md:text-xl pb-5 leading-relaxed md:leading-10">{service.description}</p>
-                <ul>
-                  {service.list.map((item, itemIndex) => (
-                    <li key={itemIndex} className="leading-[3rem]">{"- " + item}</li>
-                  ))}
-                </ul>
-              </div>
-              <div className="md:w-1/2 min-h-[300px] p-4  rounded-lg flex items-center justify-center">
-                <img src={service.image} alt="image" className="max-h-full max-w-full object-cover rounded-md" />
-              </div>
-
+            <div key={index} className="flex flex-col md:flex-row gap-10 py-10 mt-35">
+              {index % 2 === 0 ? (
+                <>
+                  <div className="w-full md:w-1/2">
+                    <h3 className="text-3xl md:text-6xl pb-5">{service.title}</h3>
+                    <p className="text-lg md:text-3xl pb-5 leading-relaxed md:leading-10">{service.title2}</p>
+                    <p className="text-lg md:text-xl pb-5 leading-relaxed md:leading-10">{service.description}</p>
+                    <ul>
+                      {service.list.map((item, itemIndex) => (
+                        <li key={itemIndex} className="leading-[3rem]">{"- " + item}</li>
+                      ))}
+                    </ul>
+                    <hr key={`hr-${index}`} className="border-t-4 border-[#f2db64] my-4" />
+                  </div>
+                  <div className="w-full md:w-1/2 min-h-[300px] p-4 rounded-lg flex items-center justify-center">
+                    <img src={service.image} alt="image" className="max-h-full max-w-full object-cover rounded-md" />
+                  </div>
+                </>
+              ) : (
+                <>
+                  <div className="w-full md:w-1/2 min-h-[300px] p-4 rounded-lg flex items-center justify-center">
+                    <img src={service.image} alt="image" className="max-h-full max-w-full object-cover rounded-md" />
+                  </div>
+                  <div className="w-full md:w-1/2">
+                    <h3 className="text-3xl md:text-6xl pb-5">{service.title}</h3>
+                    <p className="text-lg md:text-3xl pb-5 leading-relaxed md:leading-10">{service.title2}</p>
+                    <p className="text-lg md:text-xl pb-5 leading-relaxed md:leading-10">{service.description}</p>
+                    <ul>
+                      {service.list.map((item, itemIndex) => (
+                        <li key={itemIndex} className="leading-[3rem]">{"- " + item}</li>
+                      ))}
+                    </ul>
+                    <hr key={`hr-${index}`} className="border-t-4 border-[#f2db64] my-4" />
+                  </div>
+                </>
+              )}
             </div>
           ))}
         </div>
-
       </div>
+
+      <div className="bg-[#f2db64] py-10 mb-10">
+        <h3 className="text-3xl md:text-6xl pb-10 text-center">Ready to start your digital transformation journey?</h3>
+        <div className="flex justify-center">
+          <Link href="/contact">
+            <span className="bg-[#000] text-[#f2db64] px-10 py-3 rounded-full text-lg md:text-2xl">Contact Us</span>
+          </Link>
+        </div>
+      </div>
+
+      <div className="bg-[#000] py-10">
+        <h3 className="text-3xl md:text-6xl pb-10 text-center text-[#f2db64]">Our Clients</h3>
+        <div className="flex flex-wrap justify-center gap-4">
+          <img src="/images/img_rectangle_1.png" alt="image" className="w-3/4 md:w-1/5" />
+          <img src="/images/img_rectangle_1.png" alt="image" className="w-3/4 md:w-1/5" />
+          <img src="/images/img_rectangle_1.png" alt="image" className="w-3/4 md:w-1/5" />
+          <img src="/images/img_rectangle_1.png" alt="image" className="w-3/4 md:w-1/5" />
+          <img src="/images/img_rectangle_1.png" alt="image" className="w-3/4 md:w-1/5" />
+        </div>
+      </div>
+
+
+      <Footer />
 
     </>
   );
@@ -69,7 +113,7 @@ const ServiceDetails = [
     description:
       "Our digital consultants bring in cross-industry expertise to drive business success – from product launches to IT transitions. We combine actionable user-centric strategies with business and technology acumen.",
     list: ["Design thinking-led product discovery", "Digital platform & product management", "Business-IT alignment consulting", "Design thinking workshops"],
-    image: "/images/img_rectangle_13.png",// 750&480
+    image: "/images/img_rectangle_7.png",// 750&480
   },
   {
     title: "Customer Experience Design",
@@ -77,7 +121,7 @@ const ServiceDetails = [
     description:
       "Our team of experienced designers are creative thinkers and problem solvers. Beyond just good-looking designs, we craft solutions that have a business impact. Our understanding of the product intent, consumer behavior, business objectives, and technology helps in crafting design solutions that help build customer loyalty.",
     list: ["Design strategy", "Design audit", "Creative vision", "UX/UI", "Design systems"],
-    image: "/images/img_rectangle_13.png",
+    image: "/images/img_rectangle_7.png",
   },
   {
     title: "Platform Engineering & IT Modernization",
@@ -85,7 +129,7 @@ const ServiceDetails = [
     description:
       "With over 25 years of proven expertise in engineering software solutions, we enjoy a reputation for delivering great digital products across platforms and devices. Our skilled team of developers has deep experience in emerging tech such as blockchain, AI/ML, Voice, and more.",
     list: ["Technology vision & architecture", "Consumer & enterprise application development", "Digital business technology platform", "Application modernization", "Agile delivery teams", "Testing-as-a-service"],
-    image: "/images/img_rectangle_13.png",
+    image: "/images/img_rectangle_7.png",
   },
   {
     title: "Data & Analytics",
@@ -93,7 +137,7 @@ const ServiceDetails = [
     description:
       "Our data analytics team generates data-driven insights to strengthen your decision-making and stimulate your business performance. We work to enhance your analytical and CRM abilities with real-time behavior analytics resources.",
     list: ["Data strategy & consulting", "Data experiment studio", "Applied data science", "Intelligent systems", "DataOps"],
-    image: "/images/img_rectangle_13.png",
+    image: "/images/img_rectangle_7.png",
   },
   {
     title: "Enterprise Applications",
@@ -101,7 +145,7 @@ const ServiceDetails = [
     description:
       "We offer a complete suite of SAP solutions designed to transform your business ecosystem. From strategy to implementation – our SAP specialists optimize your processes, aiding your transition into an Intelligent Enterprise.",
     list: ["SAP consulting & business advisory", "SAP implementation", "Application managed services (AMS)", "Cloud services"],
-    image: "/images/img_rectangle_13.png",
+    image: "/images/img_rectangle_7.png",
   },
   {
     title: "Cybersecurity",
@@ -109,7 +153,7 @@ const ServiceDetails = [
     description:
       "Our cybersecurity specialists assess your security infrastructure and adopt a compliance-led security approach shielding the confidentiality, integrity, and availability of information across your enterprise.",
     list: ["Cyber strategy", "Application security", "Data security", "Endpoint security", "Cloud security"],
-    image: "/images/img_rectangle_13.png",
+    image: "/images/img_rectangle_7.png",
   },
 ]
 
