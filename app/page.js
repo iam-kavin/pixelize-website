@@ -193,37 +193,6 @@ const HelpCardData = [
   },
 ];
 
-// const HelpCardData = [
-//   {
-//     title: "Development",
-//     image: "/images/img_rectangle_5.png",
-//     description:
-//       "Turn design ideas into usable digital products that provide overarching value and a seamless customer experience.",
-//     list: ["Mobile App Development", "Web Development", "Progressive Web App Development", "UI/UX Design"],
-//   },
-//   {
-//     title: "Engineering",
-//     image: "/images/img_rectangle_6.png",
-//     description:
-//       "Craft and build innovative software tools and applications to achieve sustainable outcomes and business goals.",
-//     list: ["Product Engineering", "Application Modernization", "Data Engineering"],
-//   },
-//   {
-//     title: "Blockchain",
-//     image: "/images/img_rectangle_7.png",
-//     description:
-//       "Our experienced blockchain development team can boost your crypto-venture with our range of tailored solutions.",
-//     list: ["NFT Marketplace", "defi-menuDeFi Solutions", "ICO Services"],
-//   },
-//   {
-//     title: "Blockchain",
-//     image: "/images/img_rectangle_7.png",
-//     description:
-//       "Our experienced blockchain development team can boost your crypto-venture with our range of tailored solutions.",
-//     list: ["NFT Marketplace", "defi-menuDeFi Solutions", "ICO Services"],
-//   },
-// ];
-
 const RecentCardData = [
   {
     title: "HIP HIP",
