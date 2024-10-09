@@ -147,7 +147,7 @@ export const ChoosingUsData = [
     title: "Support of QA",
     image: "/images/ChoosingUs25.png",
     description:
-      "We develop use-cases and test scenarios, perform functional, security, performance and automated software testing on all applications we build for clients.",
+      "We develop use-cases  and test scenarios, perform functional, security, performance and automated software testing on all applications we build for clients.",
   },
 ];
 
